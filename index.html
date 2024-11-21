@@ -2,12 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Webshop</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" class="container mt-5">
+      <h1 class="mb-4">Gyümölcsök Webshop</h1>
+      <div class="category mb-4">
+        <h2>Almatermésű</h2>
+        <div class="product row align-items-center mb-2">
+          <div class="col-md-3">Alma</div>
+          <div class="col-md-3">Raktáron: 50</div>
+          <div class="col-md-2">
+            <input type="number" class="form-control" value="1" min="1" />
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary">Kosárba</button>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-danger">Törlés</button>
+          </div>
+        </div>
+        <!-- További termékek -->
+      </div>
+      <div class="category mb-4">
+        <h2>Bogyós</h2>
+        <div class="product row align-items-center mb-2">
+          <div class="col-md-3">Eper</div>
+          <div class="col-md-3">Raktáron: 30</div>
+          <div class="col-md-2">
+            <input type="number" class="form-control" value="1" min="1" />
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary">Kosárba</button>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-danger">Törlés</button>
+          </div>
+        </div>
+        <!-- További termékek -->
+      </div>
+      <!-- További kategóriák -->
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
