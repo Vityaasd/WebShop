@@ -1,6 +1,7 @@
 import './style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Kosárba és Törlés gombok kezelése
   document.querySelectorAll('.product button').forEach(button => {
     button.addEventListener('click', (event) => {
       const product = (event.target as HTMLElement).closest('.product');
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Tovább a Raktárhoz gomb kezelése
   const storageButton = document.getElementById('storage-button');
   if (storageButton) {
     storageButton.addEventListener('click', () => {
